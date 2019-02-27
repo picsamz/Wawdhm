@@ -17,7 +17,7 @@ var calculateWawdhIndex = (weatherForecast) => {
         wawdhIndex+= 20;
     }
 
-    if (weatherForecast['alerts'].length > 0){
+    if (weatherForecast['alerts'] && weatherForecast['alerts'].length > 0){
         wawdhIndex+= 20;
     }
 
